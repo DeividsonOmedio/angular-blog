@@ -1,0 +1,30 @@
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 90%;
+  border-bottom:thin solid #ffffff15;
+  margin: auto;
+  padding: 0 10px 10px 10px;
+}
+picture{
+  padding: 2%;
+}
+img{
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+}
+section{
+  margin: auto;
+
+}
+p{
+  margin: 9px 20px;
+  width: 100%;
+  font-size: 1.1rem;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}

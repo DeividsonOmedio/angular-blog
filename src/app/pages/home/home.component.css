@@ -1,0 +1,34 @@
+body{
+  background-color: black;
+  color: #fff;
+  padding: 10px 12px;
+}
+main{
+  display: flex;
+  justify-content: space-around;
+}
+section{
+  max-width: 51vw;
+  padding-right: 5%;
+}
+article{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+}
+app-menu-bar{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 98%;
+  padding: 5px 0;
+  background-color: #000;
+  border-bottom: #ffffff25 solid 1px;
+}
+app-big-card{
+  border-bottom: solid 1px white;
+  width: 100px;
+
+}
+

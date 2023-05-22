@@ -1,0 +1,16 @@
+body{
+  display: flex;
+  justify-content: space-between;
+}
+ul{
+  display: flex;
+
+}
+ul >li{
+  margin: 0 1%;
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}

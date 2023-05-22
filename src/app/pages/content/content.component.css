@@ -1,0 +1,52 @@
+body{
+  width: 100%;
+  padding: 10px;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 1%;
+  margin-top: 50px;
+}
+picture{
+  width: 35%;
+}
+img{
+  width: 100%;
+  min-width: 100%;
+  max-width: 650px;
+  max-height: 320px;
+}
+h1{
+  margin: 2% 0;
+  font-family: initial;
+  font-weight: 600;
+
+}
+p{
+  width: 80%;
+  margin: 15px;
+}
+a{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+a:visited{
+  color: black;
+}
+app-menu-bar{
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin-left: -5px;
+  padding: 5px 1%;
+  background-color: #000;
+  color: #fff;
+  border-bottom: #ffffff25 solid 1px;
+}
