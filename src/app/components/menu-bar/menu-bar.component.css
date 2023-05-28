@@ -12,5 +12,6 @@ ul >li{
 }
 a{
   text-decoration: none;
-  color: #fff;
+  color: gray;
+  text-decoration-color: black;
 }

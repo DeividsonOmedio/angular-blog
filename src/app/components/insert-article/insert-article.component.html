@@ -1,0 +1,23 @@
+<body>
+  <h1>Inserir novo artigo</h1>
+<div id="formEnviarArtigo">
+  <section>
+    <label for="Title" >Título:</label>
+    <input type="text" (input)="tile = $any($event.target).value">
+  </section>
+  <section>
+    <label for="Title">Imagem:</label>
+    <input type="text" (input)="image = $any($event.target).value">
+  </section>
+  <section>
+    <label for="Title">Card:</label>
+    <input type="text" (input)="card = $any($event.target).value">
+  </section>
+  <section>
+    <label for="Title" id="labelText">Texto:</label>
+    <textarea name="title" id="" cols="30" rows="10" (input)="text = $any($event.target).value"></textarea>
+    <button type="submit" (click)="enviarArtigo()">Enviar Artigo</button>
+  </section>
+
+</div>
+</body>

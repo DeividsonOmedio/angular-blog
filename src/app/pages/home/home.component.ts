@@ -11,6 +11,7 @@ export class HomeComponent {
   idsmall1: string | null = ""
   idsmall2: string | null = ""
   idsmall3: string | null = ""
+  color: string = "white";
 
 ngOnInit():void {
   let max: any = String(dataFake.length -1)
