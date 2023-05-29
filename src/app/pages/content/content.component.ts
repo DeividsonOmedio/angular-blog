@@ -12,6 +12,7 @@ export class ContentComponent {
   titleCard: string = "";
   @Input()
   imgCard: string = "";
+  card: string = "";
   @Input()
   textCard: string = "";
   private id: string | null = "0"
@@ -29,8 +30,7 @@ export class ContentComponent {
     this.titleCard = result.title;
     this.textCard = result.textcard;
     this.imgCard = result.imgcard;
-    console.log(result)
-
+    this.card = result.card;
   }
 
 

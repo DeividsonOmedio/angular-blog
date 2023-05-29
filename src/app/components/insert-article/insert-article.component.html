@@ -1,4 +1,5 @@
 <body>
+  <main *ngIf="reviser">
   <h1>Inserir novo artigo</h1>
 <div id="formEnviarArtigo">
   <section>
@@ -16,8 +17,18 @@
   <section>
     <label for="Title" id="labelText">Texto:</label>
     <textarea name="title" id="" cols="30" rows="10" (input)="text = $any($event.target).value"></textarea>
-    <button type="submit" (click)="enviarArtigo()">Enviar Artigo</button>
+    <button type="submit" (click)="revisar()">Enviar Artigo</button>
   </section>
-
 </div>
+</main>
+<div id="reviser" *ngIf="!reviser">
+    <h1>Publicar este artigo?</h1>
+    <h3>{{tile}}</h3>
+    <img src="{{image}}">
+    <h6>{{card}}</h6>
+    <p>{{text}}</p>
+    <button (click)="enviarArtigo()">Publicar</button>
+    <button (click)="Cancelar()">Cancelar</button>
+</div>
+
 </body>

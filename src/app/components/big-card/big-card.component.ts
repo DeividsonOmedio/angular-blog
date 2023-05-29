@@ -21,7 +21,7 @@ export class BigCardComponent {
     const result = dataFake.filter(article => article.id == this.id)[0]
     console.log(result)
     this.titleCard = result.title;
-    this.textCard = result.textcard;
+    this.textCard = result.card;
     this.imgCard = result.imgcard;
     console.log(result)
   }

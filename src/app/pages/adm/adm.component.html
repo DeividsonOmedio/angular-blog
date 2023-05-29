@@ -1,9 +1,12 @@
-<body *ngIf="">
+<body>
+<main *ngIf="viewadm">
 <h1>Login</h1>
 <form>
-  <input type="text" placeholder="usuario">
-  <input type="password" placeholder="senha">
-  <button type="submit">Logar</button>
+  <input id="user" type="text" placeholder="usuario" (input)="user = $any($event.target).value">
+  <input id="pass" type="password" placeholder="senha" (input)="pass = $any($event.target).value">
+  <button type="button" (click)="logar()">Logar</button>
 </form>
+</main>
+
 </body>
-<app-insert-article></app-insert-article>
+<app-insert-article *ngIf="(!viewadm)"></app-insert-article>

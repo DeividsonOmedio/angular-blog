@@ -12,7 +12,7 @@ export class InsertArticleComponent {
   @Input()
   tile: string = "";
   @Input()
-  image: string = "";
+  image: string = "Imagem";
   @Input()
   card: string = "";
   @Input()
@@ -20,14 +20,18 @@ export class InsertArticleComponent {
 
   id: number = 5;
   article: any;
-constructor(private router: Router){}
-ngOnInit(){
-  let form: any = document.getElementById("formEnviarArtigo");
+  reviser:  boolean = true;
+  constructor(private router: Router){}
 
-}
+  revisar() {
+    this.reviser = false
+  }
+  Cancelar() {
+    this.reviser = true
+  }
 
-enviarArtigo() {
-  let newAticle = {
+  enviarArtigo() {
+    let newAticle = {
     "id": String(this.id++),
     "title" : this.tile,
     "imgcard": this.image,

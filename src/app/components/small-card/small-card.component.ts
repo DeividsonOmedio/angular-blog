@@ -16,8 +16,7 @@ export class SmallCardComponent {
 
   ngOnInit():void {
     const result = dataFake.filter(article => article.id == this.id)[0]
-    this.textCard = result.textcard;
+    this.textCard = result.card;
     this.imgCard = result.imgcard;
-    console.log(result)
   }
 }
